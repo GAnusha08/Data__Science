@@ -47,6 +47,39 @@
             margin-bottom: 20px;
         }
 
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #66fcf1;
+        }
+
+        #resume-button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #0f4c75;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        #resume-button:hover {
+            background-color: #3282b8;
+        }
+
         #skills ul {
             list-style: none;
             padding: 0;
@@ -99,6 +132,20 @@
             text-align: center;
             color: #b0bec5;
         }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            #about {
+                padding: 0 10px;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -109,8 +156,17 @@
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>I’m Anusha Gujja, I'm an avid computer science student with a fervor for advancing technology and solving intricate problems. I thrive on harnessing emerging algorithms and leveraging state-of-the-art technologies to push the boundaries of what's possible in software development.</p>
+    <!-- Profile Picture -->
+    <img src="Photograph.jpeg" alt="Anusha Gujja">
+
+    <!-- About Me Text -->
+    <div>
+        <h2>About Me</h2>
+        <p>I’m Anusha Gujja, I'm an avid computer science student with a fervor for advancing technology and solving intricate problems. I thrive on harnessing emerging algorithms and leveraging state-of-the-art technologies to push the boundaries of what's possible in software development.</p>
+        
+        <!-- Resume Download Button -->
+        <a href="Anusha Resume.pdf" download id="resume-button">Download Resume</a>
+    </div>
 </section>
 
 <section id="skills">
